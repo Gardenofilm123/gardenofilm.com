@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .app {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .search-bar h1 {
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+
+    .search-bar input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .search-bar button {
+      margin-left: 10px;
+      background-color: #1976d2;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .card {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card-number {
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .card-summary {
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    .card-button {
+      color: #ffffff;
+      background-color: #1976d2;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      align-self: flex-end;
+      transition: background-color 0.2s;
+    }
+
+    .card-button:hover {
+      background-color: #1565c0;
+    }   
+
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: calc(100% - 40px);
+      }
+    }
+  
+
+</style>
+
+
+</head>
+<body>
+  <div class="app">
+    <div class="search-bar">
+      <h1>Garden of Ilm</h1>
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h2 class="card-title">Fatwa Title 1</h2>
+        <p class="card-number">Fatwa Number 1</p>
+        <p class="card-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex lorem.</p>
+        <button class="card-button">View More</button>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Fatwa Title 2</h2>
+        <p class="card-number">Fatwa Number 2</p>
+        <p class="card-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex lorem.</p>
+        <button class="card-button">View More</button>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Fatwa Title 3</h2>
+        <p class="card-number">Fatwa Number 3</p>
+        <p class="card-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex lorem.</p>
+        <button class="card-button">View More</button>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Fatwa Title 4</h2>
+        <p class="card-number">Fatwa Number 4</p>
+        <p class="card-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex lorem.</p>
+        <button class="card-button">View More</button>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Fatwa Title 5</h2>
+        <p class="card-number">Fatwa Number 5</p>
+        <p class="card-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex lorem.</p>
+        <button class="card-button">View More</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

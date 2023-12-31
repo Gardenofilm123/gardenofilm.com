@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Search Engine</title>
+   <style>
+
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #060b10;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .search-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .search-input {
+            width: 400px;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+        }
+
+        .search-button {
+            width: 100px;
+            height: 40px;
+            background-color: #ff0000;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .video-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .video-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #0c1824;
+        }
+
+        .video-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .video-card h3 {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .video-card p {
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .search-section {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-input {
+                width: 100%;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            .search-button {
+                border-radius: 5px;
+            }
+
+            .video-card img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    
+
+
+   </style> 
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-section">
+            <input type="text" class="search-input" placeholder="Search">
+            <button class="search-button">Search</button>
+        </div>
+        <div class="video-list">
+            <div class="video-card">
+                <img src="public/channels4_profile (5).jpg" alt="Dummy Video">
+                <h3>Video Title</h3>
+                <p>Video Description</p>
+            </div>
+
+            <div class="video-card">
+                <img src="public/channels4_profile (5).jpg" alt="Dummy Video">
+                <h3>Video Title</h3>
+                <p>Video Description</p>
+            </div>
+
+            <div class="video-card">
+                <img src="public/channels4_profile (5).jpg" alt="Dummy Video">
+                <h3>Video Title</h3>
+                <p>Video Description</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
